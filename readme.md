@@ -28,6 +28,19 @@ dependencies{
 }
 ```
 
+添加监听
+```java
+SelectorOfRangeTime mSelectOfTime = (SelectorOfRangeTime) findViewById(R.id.select_of_time);
+mSelectOfTime.setOnSelectConfirmListener(new SelectorOfRangeTime.OnSelectConfirmListener() {
+    @Override
+    public void call(String startTime, String endTime) {
+        final String ss = startTime + "~-----~" + endTime;
+        Toast.makeText(context, ss, Toast.LENGTH_SHORT).show();
+    }
+});
+```
+
+
 
 
 ![myDatePicker](myDatePicker.gif)
