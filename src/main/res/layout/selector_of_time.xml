@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/time_contain_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_show_select_time"
+        android:text="本月"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/button_open_time_selector"
+            android:src="@drawable/ic_date"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:padding="3dp"
+            android:layout_marginBottom="1dp"
+            android:textAlignment="center"
+            android:layout_width="30dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
